@@ -1,0 +1,505 @@
+.beckham-comparison-section {
+    position: relative;
+    width: 100%
+}
+
+.beckham-comparison__header {
+    text-align: center;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap
+}
+
+.beckham-comparison__title {
+    font-family: ABC Arizona Flare, serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #50000b;
+    margin: 0;
+    line-height: 1.2;
+    text-transform: uppercase
+}
+
+.beckham-comparison__save-badge {
+    display: inline-block;
+    background: #9b1b1f;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: ABC Arizona Flare, serif;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.beckham-comparison__table {
+    max-width: 980px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    overflow: visible;
+    border: 1px solid #E5E5E5
+}
+
+.beckham-comparison__header-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+    background: #50000b;
+    padding: 0;
+    align-items: center;
+    overflow: visible;
+    position: relative;
+    border-radius: 12px 12px 0 0
+}
+
+.beckham-comparison__header-cell {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 0;
+    overflow: visible;
+    position: relative
+}
+
+.beckham-comparison__header-cell--feature {
+    padding: 10px 10px 10px 30px;
+    align-items: flex-start;
+    text-align: left
+}
+
+.beckham-comparison__header-cell--product {
+    flex-direction: row
+}
+
+.beckham-comparison__header-label {
+    font-family: ABC Arizona Flare, serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize
+}
+
+.beckham-comparison__header-image {
+    margin-bottom: 0;
+    margin-top: -20px;
+    width: 140px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0
+}
+
+.beckham-comparison__header-image img {
+    width: 120%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center
+}
+
+.beckham-comparison__header-name {
+    font-family: ABC Arizona Flare, serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    line-height: 1.3;
+    text-align: left
+}
+
+.beckham-comparison__benefits-wrapper {
+    border-radius: 0 0 16px 16px;
+    overflow: hidden
+}
+
+.beckham-comparison__benefit-section {
+    margin-bottom: 0
+}
+
+.beckham-comparison__section-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 12px 24px;
+    border-bottom: 1px solid #E5E5E5;
+    background: #fff;
+    align-items: center
+}
+
+.beckham-comparison__section-header--no-headings {
+    grid-template-columns: 1fr;
+    gap: 0
+}
+
+.beckham-comparison__benefit-section--essentials .beckham-comparison__section-header {
+    background: #fdf8f8 !important;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.beckham-comparison__benefit-section--longevity .beckham-comparison__section-header {
+    background: #f7ece3 !important;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
+}
+
+.beckham-comparison__section-title {
+    font-family: Aeonik, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #50000b;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: .5px
+}
+
+.beckham-comparison__column-heading {
+    font-family: Aeonik, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #50000b;
+    margin: 0;
+    text-align: center
+}
+
+.beckham-comparison__benefit-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 12px 24px;
+    align-items: center;
+    border-bottom: 1px solid #E5E5E5;
+    background: #fff
+}
+
+.beckham-comparison__benefit-name {
+    font-family: Aeonik, sans-serif;
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+.beckham-comparison__benefit-check {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.beckham-comparison__check-icon,
+.beckham-comparison__x-icon {
+    width: 20px;
+    height: 20px
+}
+
+.beckham-comparison__pricing-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    padding: 14px 24px;
+    align-items: center;
+    background: #f7ece3;
+    border-bottom: 1px solid #E5E5E5
+}
+
+[data-comparison-type=essentials] .beckham-comparison__pricing-footer {
+    background: #fdf8f8 !important
+}
+
+.beckham-comparison__pricing-footer:last-of-type {
+    border-bottom: none
+}
+
+.beckham-comparison__pricing-label {
+    font-family: Aeonik, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #50000b;
+    text-align: left;
+    padding-left: 0
+}
+
+.beckham-comparison__pricing-value {
+    font-family: Aeonik, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #50000b;
+    text-align: center
+}
+
+.beckham-comparison__pricing-value--highlight {
+    color: #9b1b1f
+}
+
+.beckham-comparison__pricing-footer--savings {
+    border-bottom: none
+}
+
+.beckham-comparison__cta-section {
+    margin-top: 32px;
+    text-align: center
+}
+
+.beckham-comparison__cta-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    border-radius: 8px;
+    font-family: Aeonik, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: .5px;
+    cursor: pointer;
+    transition: all .3s ease;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.4
+}
+
+.beckham-comparison__cta-btn--primary {
+    background: #9b1b1f;
+    color: #fff
+}
+
+.beckham-comparison__cta-btn--primary:hover {
+    background: #7d1518;
+    color: #fff
+}
+
+@media (max-width: 990px) {
+    .beckham-comparison__title {
+        font-size: 32px
+    }
+
+    .beckham-comparison__save-badge {
+        font-size: 16px;
+        padding: 7px 14px
+    }
+
+    .beckham-comparison__header-cell {
+        padding: 0;
+        min-height: 0
+    }
+
+    .beckham-comparison__header-cell--feature {
+        padding: 16px
+    }
+
+    .beckham-comparison__header-label {
+        font-size: 16px
+    }
+
+    .beckham-comparison__header-image {
+        width: 120px;
+        height: 95px;
+        margin-top: -16px
+    }
+
+    .beckham-comparison__header-name {
+        font-size: 14px
+    }
+
+    .beckham-comparison__section-header,
+    .beckham-comparison__benefit-row,
+    .beckham-comparison__pricing-footer {
+        padding: 10px 20px;
+        gap: 20px
+    }
+
+    .beckham-comparison__section-title,
+    .beckham-comparison__column-heading {
+        font-size: 13px
+    }
+
+    .beckham-comparison__benefit-name {
+        font-size: 14px
+    }
+
+    .beckham-comparison__check-icon,
+    .beckham-comparison__x-icon {
+        width: 18px;
+        height: 18px
+    }
+
+    .beckham-comparison__pricing-label {
+        font-size: 13px
+    }
+
+    .beckham-comparison__pricing-value {
+        font-size: 15px
+    }
+}
+
+@media (max-width: 749px) {
+    .beckham-comparison__header {
+        margin-bottom: 32px
+    }
+
+    .beckham-comparison__title {
+        font-size: 28px
+    }
+
+    .beckham-comparison__save-badge {
+        font-size: 15px;
+        padding: 6px 12px
+    }
+
+    .beckham-comparison__table {
+        border-radius: 10px
+    }
+
+    .beckham-comparison__header-row {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+
+    .beckham-comparison__header-cell {
+        padding: 0;
+        min-height: 0
+    }
+
+    .beckham-comparison__header-cell--feature {
+        padding: 14px 10px
+    }
+
+    .beckham-comparison__header-cell--product {
+        flex-direction: column
+    }
+
+    .beckham-comparison__header-label {
+        font-size: 14px
+    }
+
+    .beckham-comparison__header-image {
+        width: 110px;
+        height: 85px;
+        margin-top: -14px
+    }
+
+    .beckham-comparison__header-name {
+        font-size: 12px;
+        text-align: center
+    }
+
+    .beckham-comparison__section-header,
+    .beckham-comparison__benefit-row,
+    .beckham-comparison__pricing-footer {
+        padding: 8px 16px;
+        gap: 14px
+    }
+
+    .beckham-comparison__section-title,
+    .beckham-comparison__column-heading {
+        font-size: 12px
+    }
+
+    .beckham-comparison__benefit-name {
+        font-size: 13px
+    }
+
+    .beckham-comparison__check-icon,
+    .beckham-comparison__x-icon {
+        width: 16px;
+        height: 16px
+    }
+
+    .beckham-comparison__pricing-label {
+        font-size: 12px
+    }
+
+    .beckham-comparison__pricing-value {
+        font-size: 14px
+    }
+
+    .beckham-comparison__cta-section {
+        margin-top: 28px
+    }
+
+    .beckham-comparison__cta-btn {
+        padding: 14px 24px;
+        font-size: 13px;
+        width: 100%
+    }
+}
+
+@media (max-width: 480px) {
+    .beckham-comparison__title {
+        font-size: 24px
+    }
+
+    .beckham-comparison__save-badge {
+        font-size: 14px
+    }
+
+    .beckham-comparison__header-cell {
+        padding: 0;
+        min-height: 0
+    }
+
+    .beckham-comparison__header-cell--feature {
+        padding: 12px 8px
+    }
+
+    .beckham-comparison__header-cell--product {
+        flex-direction: column
+    }
+
+    .beckham-comparison__header-label {
+        font-size: 12px
+    }
+
+    .beckham-comparison__header-image {
+        width: 90px;
+        height: 70px;
+        margin-top: -12px
+    }
+
+    .beckham-comparison__header-name {
+        font-size: 11px;
+        text-align: center
+    }
+
+    .beckham-comparison__section-header,
+    .beckham-comparison__benefit-row,
+    .beckham-comparison__pricing-footer {
+        padding: 7px 12px;
+        gap: 10px
+    }
+
+    .beckham-comparison__section-title,
+    .beckham-comparison__column-heading {
+        font-size: 11px
+    }
+
+    .beckham-comparison__benefit-name {
+        font-size: 12px
+    }
+
+    .beckham-comparison__check-icon,
+    .beckham-comparison__x-icon {
+        width: 15px;
+        height: 15px
+    }
+
+    .beckham-comparison__pricing-label {
+        font-size: 11px
+    }
+
+    .beckham-comparison__pricing-value {
+        font-size: 13px
+    }
+
+    .beckham-comparison__cta-btn {
+        padding: 13px 20px;
+        font-size: 12px
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/121/assets/beckham-stack-comparison-table.css.map?v=119308321911635910791761039212 */

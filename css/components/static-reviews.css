@@ -1,0 +1,333 @@
+.static-reviews-section {
+    width: 100%
+}
+
+.static-reviews {
+    width: 100%;
+    padding: 80px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.static-reviews__inner {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.static-reviews__heading {
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+    max-width: 800px
+}
+
+.static-reviews__description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 40px;
+    text-align: center;
+    color: #50000b;
+    max-width: 600px
+}
+
+.static-reviews__customer-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 0 0 30px;
+    padding: 0
+}
+
+@media screen and (min-width: 600px) {
+    .static-reviews__customer-stats {
+        flex-direction: row;
+        gap: 20px
+    }
+}
+
+.static-reviews__customer-stat {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.static-reviews__customer-stat-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #d4a84b;
+    flex-shrink: 0
+}
+
+.static-reviews__customer-stat-text {
+    font-family: var(--font-body-family), -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #50000b;
+    letter-spacing: .01em
+}
+
+@media screen and (min-width: 750px) {
+    .static-reviews__customer-stat-text {
+        font-size: 16px
+    }
+}
+
+.static-reviews__purchases-count,
+.static-reviews__servings-count {
+    color: #d4a84b
+}
+
+.static-reviews__customer-stat-divider {
+    display: none
+}
+
+@media screen and (min-width: 600px) {
+    .static-reviews__customer-stat-divider {
+        display: block;
+        width: 1px;
+        height: 24px;
+        background-color: #50000b33
+    }
+}
+
+.static-reviews__subheading {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+    color: #505050;
+    line-height: 1.5;
+    max-width: 800px;
+    font-weight: 400
+}
+
+.static-reviews-swiper.swiper-container {
+    width: 100vw;
+    margin-bottom: 40px;
+    overflow-x: clip;
+    overflow-y: visible
+}
+
+.static-reviews-swiper .swiper-wrapper {
+    align-items: stretch;
+    transition-timing-function: linear !important
+}
+
+.static-reviews-swiper .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    flex-shrink: 0
+}
+
+.static-reviews__review {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #E5E5E5;
+    box-shadow: 0 5px 15px #0000001a;
+    height: 100%;
+    width: 100%;
+    transition: all .3s ease
+}
+
+.static-reviews__review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px #00000026
+}
+
+.static-reviews__stars {
+    color: #a40011;
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1
+}
+
+.static-reviews__quote {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+    color: #50000b
+}
+
+.static-reviews__author {
+    font-size: 16px;
+    font-weight: 700;
+    color: #50000b
+}
+
+.static-reviews__stats {
+    font-size: 18px;
+    color: #50000b;
+    text-align: center;
+    margin-top: 20px
+}
+
+.static-reviews__count {
+    font-weight: 700
+}
+
+@media screen and (max-width: 991px) {
+    .static-reviews {
+        padding: 70px 0 50px
+    }
+
+    .static-reviews__heading {
+        font-size: 36px
+    }
+
+    .static-reviews__description {
+        font-size: 14px;
+        margin-bottom: 30px
+    }
+
+    .static-reviews__subheading {
+        font-size: 22px;
+        margin-bottom: 40px
+    }
+
+    .static-reviews-swiper .swiper-slide {
+        width: 350px
+    }
+
+    .static-reviews__review {
+        padding: 25px
+    }
+
+    .static-reviews__stars {
+        font-size: 22px;
+        margin-bottom: 15px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .static-reviews {
+        padding: 60px 0 40px
+    }
+
+    .static-reviews__description {
+        font-size: 14px
+    }
+
+    .static-reviews__inner {
+        padding: 0 15px
+    }
+
+    .static-reviews__heading {
+        font-size: 32px;
+        margin-bottom: 10px;
+        max-width: 600px
+    }
+
+    .static-reviews__description {
+        font-size: 13px;
+        margin-bottom: 25px;
+        max-width: 600px
+    }
+
+    .static-reviews__subheading {
+        font-size: 18px;
+        margin-bottom: 30px;
+        max-width: 600px
+    }
+
+    .static-reviews-swiper .swiper-slide {
+        width: 300px
+    }
+
+    .static-reviews__review {
+        padding: 25px 20px
+    }
+
+    .static-reviews__stars {
+        font-size: 20px;
+        margin-bottom: 15px
+    }
+
+    .static-reviews__quote {
+        font-size: 15px;
+        margin-bottom: 15px
+    }
+
+    .static-reviews__author {
+        font-size: 15px
+    }
+
+    .static-reviews__stats {
+        font-size: 16px
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .static-reviews {
+        padding: 50px 0 30px
+    }
+
+    .static-reviews__inner {
+        padding: 0 12px
+    }
+
+    .static-reviews__heading {
+        font-size: 28px;
+        margin-bottom: 8px;
+        max-width: 450px
+    }
+
+    .static-reviews__description {
+        font-size: 12px;
+        margin-bottom: 20px;
+        max-width: 450px
+    }
+
+    .static-reviews__subheading {
+        font-size: 16px;
+        margin-bottom: 25px
+    }
+
+    .static-reviews-swiper .swiper-slide {
+        width: 280px
+    }
+
+    .static-reviews-swiper.swiper-container {
+        margin-bottom: 30px
+    }
+
+    .static-reviews__review {
+        padding: 20px 15px;
+        border-radius: 6px
+    }
+
+    .static-reviews__stars {
+        font-size: 18px;
+        margin-bottom: 12px
+    }
+
+    .static-reviews__quote {
+        font-size: 14px;
+        line-height: 1.4;
+        margin-bottom: 12px
+    }
+
+    .static-reviews__author,
+    .static-reviews__stats {
+        font-size: 14px
+    }
+}
+
+/*# sourceMappingURL=/cdn/shop/t/121/assets/static-reviews.css.map?v=25418896819120808441769657800 */
