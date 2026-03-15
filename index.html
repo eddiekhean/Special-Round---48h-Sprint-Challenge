@@ -152,7 +152,8 @@
   <script src="js/core/pubsub.js" defer="defer"></script>
   <script src="js/components/mobile-performance.js" defer="defer"></script>
   <script src="js/components/product-form.js" defer="defer"></script>
-  <script src="js/core/global.js" defer="defer"></script>
+  <!-- <script src="/assets/js/main.js" defer></script> -->
+  <script src="/assets/js/main-static.js" defer></script>
   <script src="js/components/page-transitions.js" defer="defer"></script>
   <script src="js/components/details-disclosure.js" defer="defer"></script>
   <script src="js/components/details-modal.js" defer="defer"></script>
@@ -189,6 +190,7 @@
   <!-- END app block --><!-- BEGIN app block: shopify://apps/gempages-builder/blocks/embed-gp-script-head/20b379d4-1b20-474c-a6ca-665c331919f3 -->
   <!-- END app block -->
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+  <!--
   <script>
     window.ShopifyAnalytics = window.ShopifyAnalytics || {};
     window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
@@ -198,14 +200,17 @@
       window.ShopifyAnalytics.meta[attr] = meta[attr];
     }
   </script>
-  <script defer="" src="js/vendors/shopify-perf-kit-3.1.0.min.js" data-application="storefront-renderer"
+  -->
+  <!-- <script defer="" src="js/vendors/shopify-perf-kit-3.1.0.min.js" data-application="storefront-renderer"
     data-shop-id="63744606375" data-render-region="gcp-europe-west1" data-page-type="product"
     data-theme-instance-id="139957141671" data-theme-name="Dawn" data-theme-version="15.0.2"
     data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true"
     data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1"
-    data-shs-beacon-endpoint="https://im8health.com/api/collect"></script>
+    data-shs-beacon-endpoint="https://im8health.com/api/collect"></script> -->
+  <!--
   <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {}; window.ShopifyAnalytics.performance = window.ShopifyAnalytics.performance || {}; (function () { const LONG_FRAME_THRESHOLD = 50; const longAnimationFrames = []; let activeRafId = null; function collectLongFrames() { let previousTime = null; function rafMonitor(now) { if (activeRafId === null) { return; } const delta = now - previousTime; if (delta > LONG_FRAME_THRESHOLD) { longAnimationFrames.push({ startTime: previousTime, endTime: now, }); } previousTime = now; activeRafId = requestAnimationFrame(rafMonitor); } previousTime = performance.now(); activeRafId = requestAnimationFrame(rafMonitor); } if (!PerformanceObserver.supportedEntryTypes.includes('long-animation-frame')) { collectLongFrames(); const timeoutId = setTimeout(() => { cancelAnimationFrame(activeRafId); }, 10_000); window.ShopifyAnalytics.performance.getLongAnimationFrames = function (stopCollection = false) { if (stopCollection) { clearTimeout(timeoutId); cancelAnimationFrame(activeRafId); } return longAnimationFrames; }; } })();</script>
-  <script src="js/vendors/launcher.js" async=""></script>
+  -->
+  <!-- <script src="js/vendors/launcher.js" async=""></script> -->
   <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 </head>
 
@@ -1983,8 +1988,8 @@
         <link href="css/components/component-swatch-input.css" rel="stylesheet" type="text/css" media="all">
         <link href="css/components/component-swatch.css" rel="stylesheet" type="text/css" media="all">
 
-        <script src="js/components/product-info.js" defer="defer"></script>
-        <script src="js/components/product-form.js" defer="defer"></script>
+        <!-- <script src="js/components/product-info.js" defer="defer"></script> -->
+        <!-- <script src="js/components/product-form.js" defer="defer"></script> -->
         <div class="page-width">
           <div
             class="product product--medium product--left product--thumbnail_slider product--mobile-hide grid grid--1-col grid--2-col-tablet Product_template_latest_inner_new">
